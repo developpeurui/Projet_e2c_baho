@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <title>Mon portfolio</title>
 </head>
+
 <body>
     <nav>
         <a href="home.html">home</a>
@@ -14,24 +17,99 @@
         <a href="contact.html">contact</a>
     </nav>
 
-    <h1>Hello soit la bienvenue sur mon site. 
-    <br>Merci de t'inscrire sur le site pour continuer</h1>
 
-    <!--ici est mon formulaire d'inscription-->
-<form action=" "> 
-    
-    <label for="mail">Mail</label>
-    <input type="text" name="mail" placeholder="Entrez votre mail">
-    
-    <label for="mot de passe">Mot de passe</label>
-    <input type="password" name="password" placeholder="Entrez votre mot de passe">
-    
-    <button>envoyer</button>
-</form>
+    <section class="bienvenue">
+        <h1>Bienvenue sur mon portfolio !<br> Je suis une apprentie développeuse web passionnée,
+            <br>prête à transformer vos idées en réalité numérique. 🚀
+        </h1>
+
+        <a href="">demander un devis</a>
+    </section>
+
+    <section class="about">
+
+        <div class="div_un">
+            <p>
+            <h1>About</h1>
+            Bonjour !
+            Je suis Baho Evrard, une apprentie développeuse web passionnée par le monde du numérique et la création
+            d’expériences interactives. Toujours prête à relever de nouveaux défis, j’aime transformer des idées en
+            solutions fonctionnelles, esthétiques et innovantes.
+
+            Actuellement en formation pour affiner mes compétences, je me spécialise dans :
+
+            HTML, CSS, et JavaScript pour créer des interfaces modernes.
+            Les outils comme React et Bootstrap pour concevoir des applications web dynamiques.
+            Une approche axée sur l’utilisateur pour offrir des projets qui allient performance et design.
+            Dans mes moments libres, je m’intéresse à l’apprentissage continu et à la découverte des tendances
+            technologiques qui façonnent l’avenir du web. 🚀
+
+            Prête à travailler avec vous ? Contactez-moi pour discuter de vos projets ou simplement échanger ! 😊
+            </p>
+        </div>
+        <div class="div_deux"> <img src="img/identite.jpg" alt="photo_de_profil"></div>
+
+    </section>
 
 
+    <!-- Section Work -->
+    <section class="work">
+        <h1>Work</h1>
+        <div class="work-row">
+            <div class="div">Work 1</div>
+            <div class="div">Work 2</div>
+            <div class="div">Work 3</div>
+            <div class="div">Work 4</div>
+        </div>
+        <div class="work-row">
+            <div class="div">Work 5</div>
+            <div class="div">Work 6</div>
+            <div class="div">Work 7</div>
+            <div class="div">Work 8</div>
+        </div>
+    </section>
 
 
+    <section class="contact">
+        <h1>Contact</h1>
+        <form action="/submit_form" method="POST">
+            <div class="form-group">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Objet :</label>
+                <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>
+            -------------
+            © 2024 <i>[Baho Evrard]</i>. Tous droits réservés.
+            <a href="">[LinkedIn]</a> <a href="">[GitHub]</a>
+
+
+            Prêt à travailler ensemble ? → <a href="contact.html">[Me contacter]</a>
+
+            Conçu avec ❤️ et créativité
+            -------------
+        </p>
+
+
+    </footer>
 
 </body>
+
 </html>
